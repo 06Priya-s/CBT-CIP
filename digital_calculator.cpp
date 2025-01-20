@@ -20,8 +20,8 @@ void wel_print()
     cout<<"|    s     |     c     |    t    |"<<endl;
     cout<<"|   SIN    |    COS    |   TAN   |"<<endl;
     cout<<"----------------------------------"<<endl;
-    cout<<"|    e     |     m     |    L    |"<<endl;
-    cout<<"|   Euler  |   MINUS   |   LOG   |"<<endl;
+    cout<<"|    e     |     m     |    p    |"<<endl;
+    cout<<"|   Euler  |   MINUS   |   PI    |"<<endl;
     cout<<"----------------------------------"<<endl;
     cout<<"|    q     |     !     |    A    |"<<endl;
     cout<<"|   QUIT   | FACTORIAL |  CLEAR  |"<<endl;
@@ -45,8 +45,8 @@ void print(double ans)
     cout<<"|    s     |     c     |    t    |"<<endl;
     cout<<"|   SIN    |    COS    |   TAN   |"<<endl;
     cout<<"----------------------------------"<<endl;
-    cout<<"|    e     |     m     |    L    |"<<endl;
-    cout<<"|   Euler  |    SIGN   |   LOG   |"<<endl;
+    cout<<"|    e     |     m     |    p    |"<<endl;
+    cout<<"|   Euler  |   SIGN    |   PI    |"<<endl;
     cout<<"----------------------------------"<<endl;
     cout<<"|    q     |     !     |    A    |"<<endl;
     cout<<"|   QUIT   | FACTORIAL |  CLEAR  |"<<endl;
@@ -91,6 +91,21 @@ int main()
         	print(ans);
         	continue;
 		}
+        else if(ch=='p'||ch=='P')
+        {
+            cout<<"Enter the number: ";
+            cin>>n1;
+            if(n1>0)
+            {
+                ans= n1*3.141592653589793238;
+            }
+            else
+            {
+                ans = 3.141592653589793238;
+            }
+            print(ans);
+            continue;
+        }
         else
         {
             cout<<"Enter the first number: ";
@@ -171,4 +186,3 @@ int main()
     
     return 0;
 }
-
